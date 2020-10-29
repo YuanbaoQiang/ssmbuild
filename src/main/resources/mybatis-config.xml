@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--开启log4j日志-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <!--扫描包取别名可能会造成控制乱码
+    详情见: https://blog.csdn.net/qyb19970829/article/details/109343096
+    -->
+<!--    <typeAliases>-->
+<!--        <package name="com.yuanbaoqiang.pojo"/>-->
+<!--    </typeAliases>-->
+
+    <!--添加绑定-->
+    <mappers>
+        <mapper resource="com/yuanbaoqiang/dao/BookMapper.xml"/>
+    </mappers>
+</configuration>
